@@ -10,63 +10,20 @@
 
 <body>
   <div class="container">
-    <header>
-      <h1>Mi Portafolio con VITE</h1>
-      <nav>
-        <a href="#sobre-mi">Sobre Mi</a>
-        <a href="#biografia">Biografía</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </header>
+    {{> header}}
     <main>
-      <section id="perfil">
-        <div class="perfil-content">
-            <img src="img/fotoperfil2.jpg" alt="Foto de perfil">
-            <div class="info">
-                <h1>Especializado en:</h1>
-                <ul>
-                    <li>HTML5 y CSS</li>
-                    <li>JavaScript y jQuery</li>
-                    <li>Frameworks de desarrollo web, como Bootstrap</li>
-                    <li>Experiencia en diseño responsivo</li>
-                    <li>Desarrollo de aplicaciones web</li>
-                    <li>Optimización de sitios web para un rendimiento óptimo</li>
-                </ul>
-            </div>
-        </div>
-    </section>
       <!---->
-      <section id="sobre-mi">
-        <h2>Sobre Mí</h2>
-        <p>Soy un apasionado desarrollador web con una sólida experiencia en la creación de sitios web atractivos y
-          funcionales. Mi objetivo es combinar diseño creativo con una programación sólida para ofrecer soluciones web
-          de alta calidad a mis clientes. Aquí hay un resumen de mis habilidades:</p>
-        <p>Me encanta aprender nuevas tecnologías y mantenerme al día con las tendencias de desarrollo web. Mi objetivo
-          es seguir mejorando mis habilidades y entregar proyectos de alta calidad que cumplan con las expectativas de
-          mis clientes. Si estás interesado en trabajar juntos o tienes alguna pregunta, ¡no dudes en contactarme!</p>
-      </section>
+      {{> espeEn}}
       <!---->
-      <section id="biografia">
-        <h2>Biografía</h2>
-        <p>Mi nombre es Juan García y soy un desarrollador web apasionado por crear sitios web impresionantes. Tengo
-          experiencia en HTML, CSS, JavaScript y otras tecnologías web.</p>
-      </section>
+      {{> sobreMi}}
       <!---->
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Puedes contactarme de las siguientes maneras:</p>
-        <ul>
-          <li>Correo Electrónico: <a href="mailto:jg5985028@gmail.com">jg5985028@gmail.com</a></li>
-          <li>Teléfono: <a href="tel:+123456789">8939-8793</a></li>
-        </ul>
-      </section>
+      {{> proyectos}}
       <!---->
-
-      <footer>
-        <div class="footer-content">
-            <p>&copy; 2023 Juan Garcia</p>
-        </div>
-    </footer>
+      {{> biografia}}
+      <!---->
+      {{> contacto}}
+      <!---->
+      {{> footer}}
     </main>
   </div>
   <script src="scripts.js"></script>
